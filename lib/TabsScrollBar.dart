@@ -25,7 +25,6 @@ class TabsScrollBar extends StatelessWidget {
         appBar: AppBar(
           title: Text("Agile Family"),
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.blue[400],
           elevation: 0.0,
           actions: <Widget>[
             TextButton.icon(
