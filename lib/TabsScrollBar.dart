@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:agile_family/screens/addTask.dart';
 import 'package:agile_family/services/auth.dart';
 import 'package:flutter/material.dart';
 
@@ -80,6 +81,12 @@ class TabsScrollBar extends StatelessWidget {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (_)=>AddTask()));
+        },
+        child: const Icon(Icons.add),
+      )
       ),
     );
   }
