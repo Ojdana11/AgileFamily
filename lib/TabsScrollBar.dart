@@ -28,12 +28,12 @@ class TabsScrollBar extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           elevation: 0.0,
           actions: <Widget>[
-            FlatButton.icon(
-                onPressed: () async {
-                  await _authService.signOut();
-                },
-                icon: Icon(Icons.person),
-                label: Text('logout'))
+            TextButton.icon(
+              onPressed: () async {await _authService.signOut();},
+              icon: Icon(Icons.person),
+              label: Text('logout'),
+              style: TextButton.styleFrom(primary: Colors.white),
+              ),
           ],
           bottom: TabBar(
             isScrollable: true,
